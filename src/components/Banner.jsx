@@ -59,7 +59,7 @@ const Banner = () => {
             </div>
             <div className='w-[50%] flex items-center justify-center'>
                 <div className='w-[300px]  h-[400px] relative group'>
-                    <img src={`${import.meta.env.VITE_IMG_URL}${searchMovie.poster_path}`} alt="rtemp" className='w-full h-full object-cover shadow-black shadow-2xl' />
+                    <img src={`url(${import.meta.env.VITE_IMG_URL}${searchMovie.poster_path})`} alt="rtemp" className='w-full h-full object-cover shadow-black shadow-2xl' />
                     <div className='w-full h-full absolute top-0 left-0 items-center justify-center backdrop-blur-[2px] flex  opacity-0 group-hover:opacity-100
                     transition-opacity duration-500 ease-in-out cursor-pointer'>
                         <img src={iconPlay} alt="play" className='w-16 h-16 relative z-20 '  />

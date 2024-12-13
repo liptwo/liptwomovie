@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react'
 
 import Header from './components/Header'
 import Banner from './components/Banner'
-import MovieList from './components/movieList'
 import MovieSearch from './components/MovieSearch';
 import { MovieContext, MovieProvider } from './context/MovieProvider';
+import MovieList from './components/MovieList';
 
 
 

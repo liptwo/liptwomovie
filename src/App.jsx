@@ -29,7 +29,7 @@ export default function App() {
       const movieSearch = await fetch(url, options);
       const data = await movieSearch.json();
       setSearchMovie(data.results);
-      console.log(data)
+      // console.log(data)
         
     }
     catch(error){

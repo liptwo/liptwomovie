@@ -49,7 +49,7 @@ const MovieProvider = ({ children }) => {
                 method: 'GET',
                 headers: {
                 accept: 'application/json',
-                Authorization: `Bearer ${import.meta.env.VITE_API_KEY}` ,   
+                Authorization: `Bearer ${import.meta.VITE_API_KEY}` ,   
                 }
             };
             const respone = await fetch(urlGetVideo,options);

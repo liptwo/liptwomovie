@@ -6,9 +6,11 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage:{
-        'banner': 'url(/banner.png)'
-      }
+      // backgroundImage:{
+      //   'thegardenofword': 'url(/thegardenofword.png)',
+      //   'totoro': 'url(/totoro.jpg)',
+      //   'spiritedaway' : 'url(/spiritedaway.jpg)'
+      // }
     },
   },
   plugins: [],

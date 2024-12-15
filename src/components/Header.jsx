@@ -4,6 +4,11 @@ import PropTypes from 'prop-types';
 
 const Header = ( {onSearch} ) => {
   const [textSearch, setTextSearch] = useState("");
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      onSearch(textSearch);
+    }
+  };
 
   return (
     <div className="p-4 bg-black flex items-center justify-between top-0 left-0 right-0 ">
@@ -17,11 +22,11 @@ const Header = ( {onSearch} ) => {
             </nav>
         </div>
         <div className='flex items-center space-x-4'>
-            <input type="text" placeholder="Search" className= "p-2 text-black rounded" onChange={(e) => setTextSearch(e.target.value)} value={textSearch} />
-            <button className=" p-2 rounded-lg bg-red-700 text-white" onClick={() => onSearch(textSearch)}>Search</button>
+            <input type="text" placeholder="Search" className= "p-2 text-black rounded" onChange={(e) => setTextSearch(e.target.value)} value={textSearch} onKeyDown={handleKeyDown}/>
+            <button id='Button' className=" p-2 rounded-lg bg-red-700 text-white" onClick={() => onSearch(textSearch)}>Search</button>
         </div> 
     </div>
-  )
+  );
 }
 
 Header.propTypes = {

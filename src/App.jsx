@@ -49,7 +49,7 @@ export default function App() {
           Authorization: `Bearer ${import.meta.env.VITE_API_KEY}` ,   
         }
       };
-      const url1 = 'https://api.themoviedb.org/3/movie/popular?language=vi-US&page=1';
+      const url1 = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_companies=10342';
       const url2 = 'https://api.themoviedb.org/3/movie/top_rated?language=vi-US&page=1';
 
       const [res1, res2] = await Promise.all([
@@ -78,7 +78,7 @@ export default function App() {
         :(
         <>
 
-          <MovieList title={'Phim Hot'} data={movie}/>
+          <MovieList title={'Anime Time'} data={movie}/>
           <MovieList title={'Phim Đề Cử'} data={movieRated}/>
         </>
         )};

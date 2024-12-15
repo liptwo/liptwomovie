@@ -29,8 +29,8 @@ const customStyles = {
 };
 
 const opts = {
-    height: '650',
-    width: '1200',
+    // height: '650',
+    // width: '1200',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: '1',
